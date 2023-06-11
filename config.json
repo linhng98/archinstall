@@ -23,6 +23,7 @@
     "ly",
     "tree",
     "neofetch",
+    "wayland",
     "xorg-xwayland",
     "xorg-xlsclients",
     "qt5-wayland",
