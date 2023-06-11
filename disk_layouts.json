@@ -1,0 +1,26 @@
+{
+  "#replaceme": {
+    "partitions": [
+      {
+        "boot": true,
+        "filesystem": {
+          "format": "fat32"
+        },
+        "wipe": true,
+        "mountpoint": "/boot",
+        "size": "512MB",
+        "type": "primary"
+      },
+      {
+        "filesystem": {
+          "format": "ext4"
+        },
+        "wipe": true,
+        "mountpoint": "/",
+        "size": "100%",
+        "type": "primary"
+      }
+    ],
+    "wipe": true
+  }
+}

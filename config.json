@@ -5,39 +5,6 @@
   "audio": "pulseaudio",
   "bootloader": "grub-install",
   "debug": false,
-  "disk_config": {
-    "config_type": "default_layout",
-    "device_modifications": [
-      {
-        "device": "#replaceme",
-        "wipe": true,
-        "partitions": [
-          {
-            "fs_type": "fat32",
-            "length": {
-              "sector_size": null,
-              "total_size": null,
-              "unit": "MiB",
-              "value": 512
-            },
-            "mountpoint": "/boot",
-            "status": "create",
-            "type": "primary"
-          },
-          {
-            "fs_type": "ext4",
-            "length": {
-              "unit": "Percent",
-              "value": 100
-            },
-            "mountpoint": "/",
-            "status": "create",
-            "type": "primary"
-          }
-        ]
-      }
-    ]
-  },
   "hostname": "archlinux",
   "kernels": ["linux"],
   "keyboard-layout": "us",
