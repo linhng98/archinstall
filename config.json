@@ -23,6 +23,7 @@
     "network-manager-applet",
     "neovim",
     "nodejs",
+    "npm",
     "yarn",
     "i3blocks",
     "ly",
