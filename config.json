@@ -1,0 +1,77 @@
+{
+  "config_version": "2.5.2",
+  "additional-repositories": ["multilib"],
+  "archinstall-language": "English",
+  "audio": "pulseaudio",
+  "bootloader": "grub-install",
+  "debug": false,
+  "disk_config": {
+    "config_type": "default_layout",
+    "device_modifications": [
+      {
+        "device": "#replaceme",
+        "wipe": true,
+        "partitions": [
+          {
+            "fs_type": "fat32",
+            "length": {
+              "sector_size": null,
+              "total_size": null,
+              "unit": "MiB",
+              "value": 512
+            },
+            "mountpoint": "/boot",
+            "status": "create",
+            "type": "primary"
+          },
+          {
+            "fs_type": "ext4",
+            "length": {
+              "unit": "Percent",
+              "value": 100
+            },
+            "mountpoint": "/",
+            "status": "create",
+            "type": "primary"
+          }
+        ]
+      }
+    ]
+  },
+  "hostname": "archlinux",
+  "kernels": ["linux"],
+  "keyboard-layout": "us",
+  "nic": {
+    "dhcp": true,
+    "dns": null,
+    "gateway": null,
+    "iface": null,
+    "ip": null,
+    "type": "nm"
+  },
+  "ntp": true,
+  "packages": [
+    "networkmanager",
+    "network-manager-applet",
+    "ly",
+    "tree",
+    "neofetch",
+    "xorg-xwayland",
+    "xorg-xlsclients",
+    "qt5-wayland",
+    "glfw-wayland"
+  ],
+  "services": ["NetworkManager", "ly"],
+  "custom-commands": [],
+  "parallel downloads": 5,
+  "profile_config": {
+    "gfx_driver": "#replaceme"
+  },
+  "script": "guided",
+  "silent": false,
+  "swap": true,
+  "sys-encoding": "utf-8",
+  "sys-language": "en_US",
+  "timezone": "UTC",
+  "version": "2.5.2"
+}
